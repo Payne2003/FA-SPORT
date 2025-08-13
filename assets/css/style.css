@@ -15,6 +15,7 @@ header {
   background-color: #cdff9a;
   color: #000;
   font-size: 1rem;
+  height: var(--height-header);
 }
 /* LOGO */
 .logo {
@@ -43,10 +44,13 @@ header {
   text-decoration: none;
   color: #000;
   font-weight: bold;
+  height: 100%;
   position: relative;
   outline: none; /* bỏ viền xanh khi focus */
 }
-
+.catalogs {
+  position: relative;
+}
 /* Thanh gạch chân ẩn mặc định */
 .nav-item a::after {
   content: "";
@@ -241,4 +245,53 @@ header {
 
 .arrow:hover {
   transform: scale(1.2);
+}
+/* Modal custom layout */
+.modal__content {
+  background-color: #fff;
+  padding: 60px 0px;
+  margin: auto;
+}
+
+.modal__menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modal__menu-list li {
+  border-bottom: 1px solid #ddd;
+}
+
+.modal__menu-list a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  color: #000;
+  text-decoration: none;
+}
+
+.modal__menu-list a:hover {
+  background-color: #f4f4f4;
+}
+
+.modal__products {
+  padding-left: 10px;
+}
+
+.modal__product {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal__product img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.modal__product p {
+  margin-top: 8px;
+  line-height: 20px;
+  font-size: 14px;
 }
