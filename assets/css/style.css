@@ -51,6 +51,15 @@ header {
 .catalogs {
   position: relative;
 }
+.catalogs_hover {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100px;
+  height: 60px;
+  background-color: transparent;
+}
 /* Thanh gạch chân ẩn mặc định */
 .nav-item a::after {
   content: "";
